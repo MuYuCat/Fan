@@ -1,0 +1,394 @@
+@keyframes leafRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body {
+  background: #e5f3f4;
+}
+#fan {
+  width: 230px;
+  height: 600px;
+  margin: 100px auto;
+  position: relative;
+  z-index: 10;
+}
+#fan .header {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  background: #42c7ea;
+  border-radius: 50%;
+  z-index: 10;
+  border: 2px solid #0e6873;
+}
+#fan .mask {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #0e6873;
+  position: relative;
+  background: #e4ecef;
+  z-index: 11;
+}
+#fan .mask .logo {
+  border: 2px solid #0e6873;
+  border-radius: 50%;
+  position: absolute;
+  width: 80px;
+  height: 90px;
+  text-align: center;
+  line-height: 90px;
+  color: #0e6873;
+  font-size: 14px;
+  top: 53px;
+  left: 58px;
+  background: #42c7ea;
+  z-index: 3;
+}
+#fan .mask .line {
+  width: 200px;
+  height: 2px;
+  background: #3c8a93;
+  position: absolute;
+  top: 99px;
+  z-index: 2;
+}
+#fan .mask .line-1 {
+  width: 200px;
+  height: 2px;
+  background: #3c8a93;
+  position: absolute;
+  top: 99px;
+  z-index: 2;
+}
+#fan .mask .line-2 {
+  width: 200px;
+  height: 2px;
+  background: #3c8a93;
+  position: absolute;
+  top: 99px;
+  z-index: 2;
+  transform: rotate(30deg);
+}
+#fan .mask .line-3 {
+  width: 200px;
+  height: 2px;
+  background: #3c8a93;
+  position: absolute;
+  top: 99px;
+  z-index: 2;
+  transform: rotate(60deg);
+}
+#fan .mask .line-4 {
+  width: 200px;
+  height: 2px;
+  background: #3c8a93;
+  position: absolute;
+  top: 99px;
+  z-index: 2;
+  transform: rotate(90deg);
+}
+#fan .mask .line-5 {
+  width: 200px;
+  height: 2px;
+  background: #3c8a93;
+  position: absolute;
+  top: 99px;
+  z-index: 2;
+  transform: rotate(120deg);
+}
+#fan .mask .line-6 {
+  width: 200px;
+  height: 2px;
+  background: #3c8a93;
+  position: absolute;
+  top: 99px;
+  z-index: 2;
+  transform: rotate(150deg);
+}
+#fan .mask .leafs {
+  z-index: 1;
+  position: absolute;
+  animation: leafRotate 0s infinite linear;
+  transform-origin: center center;
+  width: 200px;
+  height: 200px;
+}
+#fan .mask .leafs .leaf {
+  width: 72px;
+  height: 60px;
+  border-radius: 20% 40%;
+  background: #bdcc2b;
+  border: 2px solid #0e6873;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  transform-origin: left top;
+}
+#fan .mask .leafs .leaf-1 {
+  width: 72px;
+  height: 60px;
+  border-radius: 20% 40%;
+  background: #bdcc2b;
+  border: 2px solid #0e6873;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  transform-origin: left top;
+}
+#fan .mask .leafs .leaf-2 {
+  width: 72px;
+  height: 60px;
+  border-radius: 20% 40%;
+  background: #bdcc2b;
+  border: 2px solid #0e6873;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  transform-origin: left top;
+  transform: rotate(120deg);
+}
+#fan .mask .leafs .leaf-3 {
+  width: 72px;
+  height: 60px;
+  border-radius: 20% 40%;
+  background: #bdcc2b;
+  border: 2px solid #0e6873;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  transform-origin: left top;
+  transform: rotate(240deg);
+}
+#fan .neck {
+  width: 40px;
+  height: 70px;
+  border: 2px solid #0e6873;
+  background: #42c7ea;
+  position: absolute;
+  left: 80px;
+  z-index: 9;
+  border-radius: 0 0 5% 5%;
+}
+#fan .neck-footer {
+  width: 50px;
+  height: 20px;
+  border: 2px solid #0e6873;
+  background: #77e1f1;
+  position: absolute;
+  top: 263px;
+  left: 75px;
+  border-radius: 50%;
+  z-index: 8;
+}
+#fan .bottom {
+  width: 200px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #0e6873;
+  background: #42c7ea;
+  position: absolute;
+  top: 250px;
+  left: 0px;
+  z-index: 7;
+}
+#fan .bottom-footer {
+  width: 20px;
+  height: 20px;
+  background: #bdcc2b;
+  border: 2px solid #0e6873;
+  position: absolute;
+  border-radius: 40%;
+  z-index: 6;
+  top: 310px;
+}
+#fan .bottom-footer-1 {
+  width: 20px;
+  height: 20px;
+  background: #bdcc2b;
+  border: 2px solid #0e6873;
+  position: absolute;
+  border-radius: 40%;
+  z-index: 6;
+  top: 310px;
+  left: 20px;
+}
+#fan .bottom-footer-2 {
+  width: 20px;
+  height: 20px;
+  background: #bdcc2b;
+  border: 2px solid #0e6873;
+  position: absolute;
+  border-radius: 40%;
+  z-index: 6;
+  top: 310px;
+  left: 160px;
+}
+#fan .switch {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 296px;
+  z-index: 13;
+  opacity: 0;
+  cursor: pointer;
+}
+#fan .switch-0 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 296px;
+  z-index: 13;
+  opacity: 0;
+  cursor: pointer;
+  left: 50px;
+}
+#fan .switch-0:checked + div + input + div + input + div + input + div + .mask .leafs {
+  animation-play-state: paused;
+}
+#fan .switch-1 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 296px;
+  z-index: 13;
+  opacity: 0;
+  cursor: pointer;
+  left: 75px;
+}
+#fan .switch-1:checked + div {
+  background: #a9af27;
+  color: #0e6873;
+}
+#fan .switch-1:checked + div + input + div + input + div + .mask .leafs {
+  animation-duration: 0.7s;
+}
+#fan .switch-2 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 296px;
+  z-index: 13;
+  opacity: 0;
+  cursor: pointer;
+  left: 100px;
+}
+#fan .switch-2:checked + div {
+  background: #a9af27;
+  color: #0e6873;
+}
+#fan .switch-2:checked + div + input + div + .mask .leafs {
+  animation-duration: 0.4s;
+}
+#fan .switch-3 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 296px;
+  z-index: 13;
+  opacity: 0;
+  cursor: pointer;
+  left: 125px;
+}
+#fan .switch-3:checked + div {
+  background: #a9af27;
+  color: #0e6873;
+}
+#fan .switch-3:checked + div + .mask .leafs {
+  animation-duration: 0.3s;
+}
+#fan .switch-btn {
+  display: inline-block;
+  text-align: center;
+  width: 18px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  background: #bdcc2b;
+  border: 2px solid #0e6873;
+  position: absolute;
+  border-radius: 50%;
+  color: #0e6873;
+  cursor: pointer;
+  top: 296px;
+  transform: rotateX(45deg);
+  z-index: 12;
+}
+#fan .switch-btn-0 {
+  display: inline-block;
+  text-align: center;
+  width: 18px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  background: #bdcc2b;
+  border: 2px solid #0e6873;
+  position: absolute;
+  border-radius: 50%;
+  color: #0e6873;
+  cursor: pointer;
+  top: 296px;
+  transform: rotateX(45deg);
+  z-index: 12;
+  left: 50px;
+}
+#fan .switch-btn-1 {
+  display: inline-block;
+  text-align: center;
+  width: 18px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  background: #bdcc2b;
+  border: 2px solid #0e6873;
+  position: absolute;
+  border-radius: 50%;
+  color: #0e6873;
+  cursor: pointer;
+  top: 296px;
+  transform: rotateX(45deg);
+  z-index: 12;
+  left: 75px;
+}
+#fan .switch-btn-2 {
+  display: inline-block;
+  text-align: center;
+  width: 18px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  background: #bdcc2b;
+  border: 2px solid #0e6873;
+  position: absolute;
+  border-radius: 50%;
+  color: #0e6873;
+  cursor: pointer;
+  top: 296px;
+  transform: rotateX(45deg);
+  z-index: 12;
+  left: 100px;
+}
+#fan .switch-btn-3 {
+  display: inline-block;
+  text-align: center;
+  width: 18px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  background: #bdcc2b;
+  border: 2px solid #0e6873;
+  position: absolute;
+  border-radius: 50%;
+  color: #0e6873;
+  cursor: pointer;
+  top: 296px;
+  transform: rotateX(45deg);
+  z-index: 12;
+  left: 125px;
+}
